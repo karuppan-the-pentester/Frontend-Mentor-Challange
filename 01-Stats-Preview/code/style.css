@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+/* 
+
+font-family: 'Lexend Deca', sans-serif; */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(233, 47%, 7%);
+}
+
+.card {
+    width: min(90%, 75rem);
+    background-color: hsl(244, 38%, 16%);
+    display: grid;
+    grid-template-columns: 1fr 30rem;
+    border-radius: .5rem;
+}
+
+.card__content {
+    padding: 4rem;
+}
+
+.card__content h1 {
+    font-size: 3rem;
+    width: 90%;
+    color: hsl(0, 0%, 100%);
+}
+
+.card__content h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.card__content p {
+    margin: 2rem 0rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card__image {
+    background-image: url("../task/images/image-header-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.card__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(277, 64%, 61%);
+    opacity: .5;
+}
+
+.card__content ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card__content ul li h6 {
+    font-size: larger;
+    color: hsl(0, 0%, 100%);
+}
+
+.card__content ul li {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.card__content ul li:not(:last-child) {
+    margin-right: 2rem;
+}
