@@ -1,34 +1,25 @@
 const projects = [
-  'article-preview-component',
-  'base-apparel-coming-soon',
-  'four-card-feature-section',
-  'fylo-data-storage-component',
-  'fylo-landing-page-with-two-column-layout',
-  'huddle-landing-page',
-  'huddle-page-with-feature',
-  'ping-coming-soon-page',
-  'single-price-grid-component',
-  'social-media-dashboard-with-theme-switcher',
+    '01-Stats-Preview'
 ];
 
 const list = document.getElementById('list');
 
 projects.forEach((name, i) => {
-  const listItem = document.createElement('li');
+    const listItem = document.createElement('li');
 
-  listItem.innerHTML = `
-		<a href="/${name}/index.html">
-			<img src="/${name}/design/desktop-design.jpg" alt="${name}" />
-			<p>${i + 1}. ${formatProjectName(name)}</p>
+    listItem.innerHTML = `
+		<a href="/${name}/code/index.html">
+			<img src="/${name}/task/design/desktop-design.jpg" alt="${name}" />
+			<p>${formatProjectName(name)}</p>
 		</a>
 	`;
 
-  list.appendChild(listItem);
+    list.appendChild(listItem);
 });
 
 function formatProjectName(name) {
-  return name
-    .split('-')
-    .map((word) => word[0].toUpperCase() + word.slice(1))
-    .join(' ');
+    return name
+        .split('-')
+        .map((word) => word[0].toUpperCase() + word.slice(1))
+        .join(' ');
 }
