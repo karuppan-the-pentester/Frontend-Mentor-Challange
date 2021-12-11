@@ -1,5 +1,6 @@
 const projects = [
-    '01-Stats-Preview'
+    '01-Stats-Preview',
+    '02-Huddle'
 ];
 
 const list = document.getElementById('list');
